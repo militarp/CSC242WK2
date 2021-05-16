@@ -1,6 +1,29 @@
 #include <iostream>
 using namespace std;
 
+class Circle
+{
+    public:
+    // The radius of this circle
+           double radius;
+        // Construct a default circle object
+        Circle()
+        {
+        radius = 1;
+        }
+    
+        // Construct a circle object
+        Circle(double newRadius)
+        {
+        radius = newRadius;
+        }
+    
+        // Return the area of this circle
+        double getArea()
+        {
+        return radius * radius * 3.14159;
+        }
+    }; // Must place a semicolon here
 //This program prompts user to enter circle raduis
 //Then the circle area is displayed
 double c(double n)
